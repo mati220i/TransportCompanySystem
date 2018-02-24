@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="818.0" prefWidth="614.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.EditPackageCourierController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="818.0" prefWidth="614.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="614.0" pickOnBounds="true">
+               <image>
+                  <Image url="@LogoDDPCMobile.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="520.0" spacing="20.0">
+               <children>
+                  <Label text="Edycja Paczki" textFill="#bf1313">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Label text="Czy posiada reklamację" textFill="#bf1313">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="complaint" mnemonicParsing="false" />
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" spacing="20.0">
+                     <children>
+                        <Label text="Podpis Odbierającego" textFill="#bf1313">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="signature" onKeyTyped="#signatureType" prefHeight="300.0">
+                           <font>
+                              <Font size="40.0" />
+                           </font></TextArea>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Label fx:id="statement" text="Uzupełnij Podpis" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#confirm" text="Zatwierdź">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#back" text="Wróć">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
