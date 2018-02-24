@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: Orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.UserMainPageController">
+   <children>
+      <GridPane alignment="CENTER" layoutY="-0.0" prefHeight="800.0" prefWidth="1200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="320.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1004.0" minWidth="10.0" prefWidth="889.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="394.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="685.0" minHeight="10.0" prefHeight="685.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LogoDDPCMini.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="50.0" GridPane.columnIndex="1">
+               <children>
+                  <Button fx:id="myPackageButton" mnemonicParsing="false" onAction="#myPackage" text="Moje Przesyłki">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="accountManagementButton" mnemonicParsing="false" onAction="#accountManagement" text="Zarządzaj Kontem">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logOut" text="Wyloguj">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="trackingButton" mnemonicParsing="false" onAction="#tracking" text="Śledź Przesyłkę">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pricingButton" mnemonicParsing="false" onAction="#pricing" text="Wyceń">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sendPackageButton" mnemonicParsing="false" onAction="#sendPackage" text="Wyślij Przesyłkę">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="findLocationButton" mnemonicParsing="false" onAction="#findLocation" text="Znajdź lokalizajcę">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="loginAs" text="Zalogowano jako " textFill="#bf1313">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label text="Nasz Tabor i Nasze Usługi" textAlignment="CENTER" textFill="#bf1313">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="prevButton" mnemonicParsing="false" onAction="#prevImage" text="&lt;&lt;" />
+                        <ImageView fx:id="image" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@taborLublin3.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="nextButton" mnemonicParsing="false" onAction="#nextImage" text="&gt;&gt;" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

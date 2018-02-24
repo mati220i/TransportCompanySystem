@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.UserAccountManagementPageController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <Label text="Zarządzanie Kontem " textFill="#bf1313">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="600.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label text="Login" textFill="#bf1313">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="loginTextField" disable="true" onKeyTyped="#loginEntered" />
+                              <Label fx:id="loginStatement" text="Login Zajęty" textFill="#bf1313">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label text="Edytuj Login" textFill="#bf1313">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="editLoginCheckBox" mnemonicParsing="false" onAction="#editLogin" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Hasło" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passwordTextField" onKeyTyped="#passwordEntered" />
+                  <Label fx:id="passwordStatement" text="Podaj Hasło" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Imię" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameTextField" onKeyTyped="#nameEntered" />
+                  <Label fx:id="nameStatement" text="Podaj Imię" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Nazwisko" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="surnameTextField" onKeyTyped="#surnameEntered" />
+                  <Label fx:id="surnameStatement" text="Podaj Nazwisko" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Adres" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="addressTextField" onKeyTyped="#addressEntered" />
+                  <Label fx:id="addressStatement" text="Podaj Adres" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#editData" text="Edytuj">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#cancel" text="Anuluj">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

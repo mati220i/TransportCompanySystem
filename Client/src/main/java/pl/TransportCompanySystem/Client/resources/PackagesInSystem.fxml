@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.PackagesInSystemController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@LogoDDPCMini.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="900.0" spacing="60.0">
+                     <children>
+                        <Label text="Paczki w systemie" textFill="#bf1313">
+                           <font>
+                              <Font name="System Bold Italic" size="30.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="500.0" spacing="2.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#delete" text="Usuń">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#editPackage" text="Edytuj">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="detailsButton" mnemonicParsing="false" onAction="#details" text="Szczegóły">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#refresh" text="Odśwież">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnToMain" text="Wróc">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <TableView fx:id="packageTable" prefHeight="600.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="packageID" prefWidth="117.0" text="ID Paczki" />
+                  <TableColumn fx:id="user" prefWidth="121.0" text="Użytkownik" />
+                  <TableColumn fx:id="courier" prefWidth="115.0" text="Kurier" />
+                  <TableColumn fx:id="locations" prefWidth="161.0" text="Lokalizacja" />
+                <TableColumn fx:id="size" minWidth="0.0" prefWidth="125.0" text="Rozmiar" />
+                  <TableColumn fx:id="price" prefWidth="111.0" text="Cena" />
+                  <TableColumn fx:id="complaint" prefWidth="102.0" text="Reklamacja" />
+                  <TableColumn fx:id="weight" prefWidth="122.0" text="Waga" />
+                  <TableColumn fx:id="paymentMethod" prefWidth="185.0" text="Rodzaj Płatności" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="50.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

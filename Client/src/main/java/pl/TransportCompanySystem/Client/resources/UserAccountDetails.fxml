@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.UserAccountDetailsController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="600.0">
+         <children>
+            <Label text="Dane Użytkownika" textFill="#bf1313">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="ID Użytkownika" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userID" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="600.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <Label text="Login" textFill="#bf1313">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="login" editable="false" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Hasło" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="password" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Imię" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Nazwisko" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="surname" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Adres" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="address" editable="false" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button fx:id="userPackagesButton" mnemonicParsing="false" onAction="#userPackages" text="Paczki Użytkownika">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#back" text="Wróć">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

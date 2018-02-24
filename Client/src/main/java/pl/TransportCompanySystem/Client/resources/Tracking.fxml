@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.TrackingController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="600.0" spacing="40.0">
+         <children>
+            <Label text="Śledzenie Paczek" textFill="#bf1313">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Label text="Podaj nr paczki" textFill="#bf1313">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="packageID" prefWidth="250.0" />
+                  <Button mnemonicParsing="false" onAction="#search" text="Wyszukaj">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TextArea fx:id="status" editable="false" prefHeight="350.0" prefWidth="200.0" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font></TextArea>
+            <Button mnemonicParsing="false" onAction="#back" text="Wróć">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

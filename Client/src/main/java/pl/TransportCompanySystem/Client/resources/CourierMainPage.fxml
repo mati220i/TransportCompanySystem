@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="818.0" prefWidth="614.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.TransportCompanySystem.Client.Controllers.CourierMainPageController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="818.0" prefWidth="614.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="614.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@LogoDDPCMobile.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label fx:id="loginAs" text="Zalogowano jako" textFill="#bf1313">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#myPackages" prefHeight="50.0" prefWidth="500.0" text="Moje Paczki" />
+            <Button mnemonicParsing="false" onAction="#changeStatus" prefHeight="50.0" prefWidth="500.0" text="Zmiana Statusu Paczki" />
+            <Button mnemonicParsing="false" onAction="#logOut" prefHeight="50.0" prefWidth="500.0" text="Wyloguj się" />
+            <VBox alignment="TOP_CENTER" prefHeight="318.0" prefWidth="614.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="243.0" fitWidth="366.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@uslugiPaczka2.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#prevImage" text="&lt;&lt;">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#nextImage" text="&gt;&gt;">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
