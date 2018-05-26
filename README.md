@@ -7,12 +7,13 @@ Do poprawnego działania należy załadować dane do bazy dancyh z pliku: "Serve
 
 ## Screens
 
-![My image](TransportCompanySystem/screens/server.jpg)
+![My image](screens/server.jpg)
 <br/>
 *Okno servera*
+<br/>
 *Server window*
 
-![My image](TransportCompanySystem/screens/server2.jpg)
+![My image](screens/server2.jpg)
 <br/>
 *Okno servera po kilku operacjach i wyłączeniu. Logi zostają zapisane w pliku*
 *Server window after several operations and switching off. The logs are saved in the file*
